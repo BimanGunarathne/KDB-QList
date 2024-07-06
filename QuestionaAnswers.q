@@ -49,7 +49,32 @@ h[1;0]
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-i:10 20 30 40 50
-// 15. Question: Use index elision to access all elements except the first in the list [10, 20, 30, 40, 50].
-i[1_ 10 20 30 40 50]
+show i:3 cut 10* til 50
+// 15. Retrieve the 2nd and 3rd items from each list in the i variable.
+i[;1 2]
 
+// 16. Retrieve the 2nd and 3rd items from the i variable
+i[1 2;]
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+show j:1 2 3 4 5
+// 17. Question: Subset the list [1, 2, 3, 4, 5] to include only the elements at indices 0, 2, and 4.
+0 2 4 sublist j
+
+// 18. Question: Remove the first 2 elemnt in the list
+2_j
+
+// 19. Question: Remove the last 2 elemnt in the list
+-2_j
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+show k:1 2 3 4 5
+// 20. Question: Find the index of the number 3 in the list [1, 2, 3, 4, 5].
+k?3
+
+// 21. Question: Find the indices of the number 2 in the list [1, 2, 3, 2, 5].
+where 2=k
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
